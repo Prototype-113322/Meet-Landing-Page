@@ -1,0 +1,441 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/*MOBILE SCREEN*/
+
+/*NO DISPLAY CLASSES FOR MOBILE RESOLUTION*/
+
+.container-for-desktop-devices{
+  display: none;
+}
+
+
+.logo{
+  padding-top: 4rem;
+  padding-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+ .meet{
+  padding-left: 0.625rem;
+ }
+
+ .logo-img:hover{
+  transform: rotate(720deg);
+  filter: blur(0.0625rem);
+  transition: cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+ }
+
+
+
+.back-img-container{
+  width: 100%;
+  height: auto;
+  padding-top: 2.5rem;
+}
+
+.back-img{
+  object-fit:cover;
+  width: 100%;
+}
+
+.image{
+  content: url(./assets/tablet/image-hero.png);
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-hover{
+  display: none;
+  content: url(./assets/tablet/image-hero-hover.png);
+  width: 100%;
+}
+
+.image:hover{
+  content:url(./assets/tablet/image-hero-hover.png)
+}
+
+.image-hover:hover{
+  content: url(./assets/tablet/image-hero.png);
+  transition: ease 0s;
+  filter: saturate(0.5);
+}
+
+
+
+.heading{
+  color: rgb(6, 6, 15);
+  opacity: 80%;
+  padding: 3.125rem 0.625rem 1.25rem 0.625rem;
+  text-align: center;
+  font-weight: 900;
+
+}
+
+.gradient-text{
+  background: linear-gradient(92.19deg, #855FB1 -15.84%, #4D96A9 114.64%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text{
+  text-align: center;
+  padding: 0 1.375rem;
+  opacity: 80%;
+}
+
+.button-container-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5rem;
+  gap: 1rem;
+}
+
+.button{
+  border: none;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 1.875rem;
+  background-color: hsla(192, 37%, 48%, 1);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.second-button{
+  color: #ffffff99;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+
+.vertical-flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.2rem;
+}
+
+.vertical-line{
+  height: 6.875rem;
+  border: 1px solid black;
+  opacity: 14%;
+  position: relative;
+  top: 1rem;
+}
+
+.round-button{
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.136);
+  font-weight: 900;
+}
+
+.second-line{
+  position: relative;
+  top: 3rem;
+}
+
+/*GRID LAYOUT FOR IMAGES*/
+
+.grid-container{
+  padding: 4rem 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.25rem;
+}
+
+.grid-container img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.details{
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-text{
+  text-align: center;
+  font-weight: 900;
+  color: hsla(192, 37%, 48%, 1);
+}
+
+.second-heading{
+  padding-top: 1.6rem;
+  font-size: 2.1rem;
+}
+
+.second-round-button{
+  z-index: 2;
+  position: relative;
+  top: 3rem;
+}
+
+
+
+/*FOOTER*/
+
+.footer-wrapper{
+  background-image: url(./assets/mobile/image-footer.jpg);
+  background-size: cover;
+  background-position: top;
+
+
+}
+
+.flex{
+  background-color: hsla(192, 37%, 48%, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.875rem 1.25rem;
+
+}
+
+
+.third-heading{
+  padding-top: 1.6rem;
+  font-size: 2.1rem;
+  color: hsla(0, 0%, 100%, 1);
+  font-weight: 900;
+}
+
+.body-text{
+  text-align: center;
+  line-height: 1.4rem;
+  font-weight: 600;
+  color: white;
+}
+
+.btn{
+  margin-top: 2.3rem;
+}
+
+/*TABLET SIZE*/
+
+@media(min-width:601px){
+.footer-wrapper{
+  background-image: url(./assets/tablet/image-footer.jpg);
+  background-size:cover;
+}
+
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  max-width:15rem;
+}
+
+
+.text{
+  max-width: 26.661rem;
+}
+
+.button-container-flex{
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+}
+
+.second-button{
+  margin:0;
+
+}
+
+.vertical-flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.btn{
+  margin-top: 1.5rem;
+}
+
+.second-heading{
+  max-width: 25rem;
+}
+
+}
+ 
+
+/*LARGER SCREENS*/
+
+@media(min-width:992px){
+
+  .logo{
+     padding-top: 3.75rem;
+  }
+
+  .back-img-container{
+    display: none;
+  }
+
+  .button-section{
+    display: none;
+  }
+
+  .grid-container{
+    display: none;
+  }
+
+
+
+  .container-for-desktop-devices{
+    margin-top: 1.25rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    padding: 0 1.25rem;
+    
+  }
+
+  /*IMAGE SECTION*/
+
+  .left-container{
+    height: 14.375rem;
+  }
+
+  .right-container{
+    padding-top: 1.875rem;
+    height: 14.375rem;
+  }
+
+  .left-image-item{
+    content: url(./assets/desktop/image-hero-left.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  .left-image-item-hover{
+    content: url(./assets/desktop/image-hero-left.png);
+    background-size: cover;
+    height: 100%;
+    display: none;
+  }
+
+  .left-image-item:hover{
+    content: url(./assets/desktop/image-hero-left-hover.png);
+  }
+
+  .right-image-item-hover{
+    content: url(./assets/desktop/image-hero-right-hover.png);
+    background-size: cover;
+    height: 100%;
+    display: none;
+  }
+
+  .right-image-item:hover{
+    content: url(./assets/desktop/image-hero-right-hover.png);
+  }
+
+  .right-image-item{
+    content: url(./assets/desktop/image-hero-right.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  /*MIDDLE SECTION IN A CONTAINER*/
+
+  .text-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading{
+    max-width:15rem;
+  }
+  
+  
+  .text{
+    max-width:29.675rem;
+  }
+
+  
+  .no-display-for-desktop-device{
+    display: none;
+  }
+
+  /*GRID SECTION FOR DESKTOP DEVICES*/
+
+  .grid-container{
+    padding: 4rem 9rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.25rem;
+  }
+  
+  .grid-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .second-heading{
+    max-width: 25rem;
+  }
+
+  /*FOOTER*/
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 18.75rem; 
+   }
+
+  .footer-wrapper{
+    background-image: url(./assets/desktop/image-footer.jpg);
+    height: 18.75rem;
+  }
+
+  .third-heading{
+    max-width: 18.375rem;
+    text-align: left;
+  }
+
+  .body-text{
+    max-width: 18.375rem;
+    text-align: left;
+  }
+
+  .btn{
+    margin: 0;
+  }
+
+
+}
